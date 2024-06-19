@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Library</div>
+
+        <div class="contents">
+            <div class="add">
+                <button class="addBook" data-open-modal><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle-outline</title><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" /></svg></button>
+
+                <dialog data-modal>
+                    <form>
+                        <label for="bookName">Name:</label>
+                        <input type="text" name="bookName">
+                        <label for="author">Author:</label>
+                        <input type="text" name="author">
+                        <label for="pages">Pages:</label>
+                        <input type="text" name="pages">
+                        <legend>Have you read it?:</legend>
+                        <input type="radio" name="read" id="read">
+                        <label for="read">Read</label>
+                        <input type="radio" name="notRead" id="notRead">
+                        <label for="notRead">Not Read</label>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </dialog>
+
+
+            </div>
+            <div class="items">
+                Your books:
+            </div>
+        </div>
+    </div>
+</body>
+</html>

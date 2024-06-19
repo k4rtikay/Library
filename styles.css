@@ -1,0 +1,33 @@
+
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    height:25vh;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color:#D8EFD3;
+    margin: 0;
+    align-items: center;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.addBook{
+    border-radius: 25px;
+    height: 5rem;
+    width: 5rem;
+    border:none;
+}
+
+.items{
+    font-size: 1.5rem;
+}
