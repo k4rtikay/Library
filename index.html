@@ -13,22 +13,24 @@
 
         <div class="contents">
             <div class="add">
-                <button class="addBook" data-open-modal><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle-outline</title><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" /></svg></button>
+                <button class="addBook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle-outline</title><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" /></svg></button>
 
-                <dialog data-modal>
+                <dialog class="modal">
                     <form>
                         <label for="bookName">Name:</label>
-                        <input type="text" name="bookName">
+                        <input type="text" name="bookName" required>
                         <label for="author">Author:</label>
-                        <input type="text" name="author">
+                        <input type="text" name="author" required>
                         <label for="pages">Pages:</label>
-                        <input type="text" name="pages">
-                        <legend>Have you read it?:</legend>
-                        <input type="radio" name="read" id="read">
-                        <label for="read">Read</label>
-                        <input type="radio" name="notRead" id="notRead">
-                        <label for="notRead">Not Read</label>
-
+                        <input type="text" name="pages" pattern="[0-9]*" required>
+                        <legend style="font-weight: bold; font-size: 1.05rem;">Have you read it?:</legend>
+                        <div class="radiobutton1">
+                            <input type="radio" name="read" id="read" required>
+                            <label for="read">Read</label>
+                        </div>
+                        <div class="radiobutton2">
+                            <input type="radio" name="read" id="notRead" required>
+                            <label for="notRead">Not Read</label></div>
                         <button type="submit">Submit</button>
                     </form>
                 </dialog>

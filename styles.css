@@ -31,3 +31,46 @@
 .items{
     font-size: 1.5rem;
 }
+
+.modal{
+    height:45vh;
+    border-radius: 25px;
+    padding: 3rem;
+    border-color: white;
+}
+
+.modal::backdrop{
+    background-color: rgb(0,0,0,0.6)
+}
+
+input[type=text]{
+    display: block;
+    margin: 1.5rem;
+    margin-top: 1px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+label{
+    font-size:1.05rem ;
+    font-weight: bold;
+}
+
+input[type=radio]{
+    margin:8px;
+}
+
+button[type=submit]{
+    margin-top: 1.7rem;
+    height: 3.0rem;
+    padding: 9px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    background-color:#90BE6D ;
+    border-color: #90BE6D;
+    outline: none;
+    border-style: solid;    
+}
