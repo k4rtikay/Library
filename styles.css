@@ -95,3 +95,42 @@ button[type=submit]{
     border-color: #53917E;
     border-width: 4px;
 }
+
+.delete{
+    height: 3rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    padding: 0 20px 0 20px;
+    color: beige;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 23px;
+    border-color:#EA8592;
+    border-width: 5px;
+    background-color: #E46273;
+    outline: none;
+}
+
+.read-toggle{
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-left: 3.7rem;
+    padding: 12px 20px 12px 20px;
+    color: beige;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 23px;
+    border-width: 5px;
+}
+
+.read-toggle[data-read="false"]{
+    background-color: #67C2F4;
+    border-color: #BBDDF2;
+}
+
+.read-toggle[data-read="true"]{
+    background-color: #F6A951;
+    border-color: #F9C58B;
+    padding-left: 1.3rem;
+}
